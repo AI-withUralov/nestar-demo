@@ -3,7 +3,7 @@ import shadow from './shadow';
 import typography from './typography';
 
 /**
- * LIGHT THEME (DEFAULT)
+ * LIGHT THEME -- (DEFAULT)
  */
 export const light = {
 	palette: {
