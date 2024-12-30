@@ -1,19 +1,27 @@
-import withLayoutMain from "@/libs/components/layout/LayoutHome";
-import { Box, Container, Stack } from "@mui/material";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { NextPage } from "next";
+import { Stack } from "@mui/material";
+import TrendProperties from "@/libs/homepage/TrendProperties";
+import PopularProperties from "@/libs/homepage/PopularProperties";
+import Advertisement from "@/libs/homepage/Advertisement";
+import TopProperties from "@/libs/homepage/TopProperties";
+import TopAgents from "@/libs/homepage/TopAgents";
+import withLayoutMain from "@/libs/layout/LayoutHome";
+
 
 const Home: NextPage = () => {
   return (
-    <Container>
-      <Stack flexDirection={"column"}>
-        <Box>Popular Properties</Box>
-        <Box>Top Agents</Box>
-        <Box>Top Properties</Box>
-        <Box>Events</Box>
-      </Stack>
-    </Container>
+    <Stack className={"home-page"}>
+      <TrendProperties />
+      <PopularProperties />
+      <Advertisement />
+      <TopProperties />
+      <TopAgents />
+    </Stack>
   );
 };
 
 export default withLayoutMain(Home);
-8
