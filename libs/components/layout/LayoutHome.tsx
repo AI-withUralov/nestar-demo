@@ -1,9 +1,11 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
 import Top from "../Top";
+import HeaderFilter from "../homepage/HeaderFilter";
 import Footer from "../Footer";
 
-const withLayoutBasic = (Component: any) => {
+
+const withLayoutMain = (Component: any) => {
   return (props: any) => {
     return (
       <>
@@ -14,18 +16,9 @@ const withLayoutBasic = (Component: any) => {
           <Stack id={"top"}>
             <Top />
           </Stack>
-
-          <Stack
-            className={`header-basic`}
-            style={{
-              backgroundImage: `url(/img/banner/properties.png)`,
-              backgroundSize: "cover",
-              boxShadow: "inset 10px 40px 150px 40px rgb(24 22 36",
-            }}
-          >
+          <Stack className={"header-main"}>
             <Stack className={"container"}>
-              <strong> Search</strong>
-              <span>We are glad to see you again!</span>
+              <HeaderFilter />
             </Stack>
           </Stack>
 
@@ -42,4 +35,4 @@ const withLayoutBasic = (Component: any) => {
   };
 };
 
-export default withLayoutBasic;
+export default withLayoutMain;
