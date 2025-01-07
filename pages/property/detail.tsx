@@ -1,13 +1,9 @@
-
-import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import { Container, Stack } from "@mui/material";
-import { NextPage } from "next";
+import withLayoutBasic from '@/libs/components/layout/LayoutBasic';
+import { Container, Stack } from '@mui/material';
+import { NextPage } from 'next';
 
 const PropertyDetail: NextPage = () => {
-  return (
-    <Container>PROPERTY DETAIL</Container>
-  )
-}
+	return <Container>PROPERTY DETAIL</Container>;
+};
 
-export default withLayoutBasic(PropertyDetail);   
-
+export default withLayoutBasic(PropertyDetail);
